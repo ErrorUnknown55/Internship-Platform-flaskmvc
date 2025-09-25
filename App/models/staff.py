@@ -1,9 +1,9 @@
 from .user import User, db
 
 class Staff(User):
-    __tablename__ = 'staff"' \
+    __tablename__ = 'staff' 
     
-    id = db.Column(db.Interger, db.ForeginKey('users.id'), primary_key=True)
+    id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)
     department = db.Column(db.String(100))
     
     __mapper_args__ = {
@@ -17,7 +17,7 @@ class Staff(User):
         from .shortlist import Shortlist
         shortlist = Shortlist(
             student_id=student_id,
-            position_id = positiion_id,
+            position_id = position_id,
             shortlisted_by=self.id
         )
 

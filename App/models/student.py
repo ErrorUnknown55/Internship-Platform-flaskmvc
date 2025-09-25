@@ -6,7 +6,7 @@ class Student(User):
     id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True)
     student_id = db.Column(db.String(20), unique=True)
     major = db.Column(db.String(100))
-    year = db.Column(db.String(20))#Tobe chnaged to 4 digits
+    year = db.Column(db.String(20))#To be chnaged to 4 digits
 
     # Relationships
     shortlists = db.relationship('Shortlist', backref='student', lazy=True)
