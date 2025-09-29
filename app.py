@@ -1,7 +1,7 @@
 from flask import Flask
-from models import db, User, Employer, Staff, Student, InternshipPosition, Shortlist
-from controllers import EmployerController, StaffController, StudentController
-from views import EmployerView, StaffView, StudentView
+from App.models import db, User, Employer, Staff, Student, InternshipPosition, Shortlist
+from App.controllers import EmployerController, StaffController, StudentController
+from App.views import EmployerView, StaffView, StudentView
 import sys
 
 def create_app():

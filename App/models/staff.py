@@ -1,4 +1,5 @@
-from .user import User, db
+from . import db
+from .user import User
 
 class Staff(User):
     __tablename__ = 'staff' 
@@ -13,7 +14,7 @@ class Staff(User):
     def __repr__(self):
         return f'<Staff {self.username}>'
     
-    def add_student_to_shortlist(self, student_id, position_id):
+    def add_to_shortlist(self, student_id, position_id):
         from .shortlist import Shortlist
         shortlist = Shortlist(
             student_id=student_id,

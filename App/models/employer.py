@@ -8,7 +8,7 @@ class Employer(User):
     company_description = db.Column(db.Text)
 
     #Relationships
-    internship_positions = db.relationship('InternshipPosition', backref='employer', lazy=True)
+    positions = db.relationship('InternshipPosition', backref='employer', lazy=True)
     
     __mapper_args__ = {
         'polymorphic_identity':'employer',
@@ -17,8 +17,8 @@ class Employer(User):
     def __repr__(self):
         return f'<Employer {self.username}>'
 
-    def create_internship_position(self, title, description, requirements):
-        from .internship_position import IntershipPosition
+    def create_position(self, title, description, requirements):
+        from .internship_position import InternshipPosition
         position = InternshipPosition(
             title=title,
             description=description,
