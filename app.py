@@ -4,7 +4,7 @@ from App.models import db, User, Employer, Staff, Student, InternshipPosition, S
 from App.controllers.student_controller import StudentController
 from App.controllers.staff_controller import StaffController
 from App.controllers.employer_controller import EmployerController
-from App.views import EmployerView, StaffView, StudentView
+#from App.views import EmployerView, StaffView, StudentView
 import sys
 
 def create_app():

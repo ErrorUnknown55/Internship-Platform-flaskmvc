@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 
 from App.database import init_db
-from config import load_config
+from App.config import load_config
 
 
 from App.controllers import (
