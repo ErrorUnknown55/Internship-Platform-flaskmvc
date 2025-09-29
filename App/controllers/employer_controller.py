@@ -1,4 +1,4 @@
-from models import Employer, InternshipPosition, Shortlist, db
+from App.models import Employer, InternshipPosition, Shortlist, db
 
 class EmployerController:
     

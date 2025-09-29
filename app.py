@@ -1,6 +1,9 @@
 from flask import Flask
+from flask_admin import Admin
 from App.models import db, User, Employer, Staff, Student, InternshipPosition, Shortlist
-from App.controllers import EmployerController, StaffController, StudentController
+from App.controllers.student_controller import StudentController
+from App.controllers.staff_controller import StaffController
+from App.controllers.employer_controller import EmployerController
 from App.views import EmployerView, StaffView, StudentView
 import sys
 

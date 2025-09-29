@@ -1,4 +1,4 @@
-from models import Staff, Student, InternshipPosition, Shortlist, db
+from App.models import Staff, Student, InternshipPosition, Shortlist, db
 
 class StaffController:
 

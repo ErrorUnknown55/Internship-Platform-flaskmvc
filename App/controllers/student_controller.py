@@ -1,4 +1,4 @@
-from models import Student, Shortlist
+from App.models import Student, Shortlist
 
 class StudentController:
 
