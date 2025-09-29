@@ -16,7 +16,7 @@ class StudentView:
 
     def display_employer_responses(responses):
         print("\n EMPLOYER RESPONSES")
-        for i,  responce in enumerate(responses, 1):
-            print(f'{i}. Position: {responce['position_title']}')
-            print(f'Status: {responce['statis']}')
-            print(f'Feedback: {responce['employer feedback']}')
+        for i,  response in enumerate(responses, 1):
+            print(f"{i}. Position: {response['position_title']}")
+            print(f"Status: {response['statis']}")
+            print(f"Feedback: {response['employer feedback']}")
