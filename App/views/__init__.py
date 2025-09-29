@@ -5,7 +5,7 @@
 #from .auth import *#auth_views
 #from .admin import *#setup_admin
 from App.views.employer_view import EmployerView
-from App.views.student_view import StaffView
+from App.views.staff_view import StaffView
 from App.views.student_view import StudentView
 
 
