@@ -15,7 +15,8 @@ from App.controllers import (
     add_auth_context
 )
 
-from App.views import views, setup_admin
+#from App.views import views, setup_admin
+from App.views.admin import views, setup_admin
 
 
 
